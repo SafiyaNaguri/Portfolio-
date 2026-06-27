@@ -350,7 +350,7 @@
   /* --- PROJECTS --- */
   .projects-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 24px;
   }
 
@@ -774,6 +774,7 @@
   <ul class="nav-links">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#dsa">DSA</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -786,7 +787,7 @@
   <div class="hero-content">
     <div class="hero-tag">Available for Internships</div>
     <h1>Safiya<br><em>Naguri</em></h1>
-    <p class="hero-sub">Computer Science undergraduate building JavaScript web apps, sharpening DSA skills, and turning ideas into working software.</p>
+    <p class="hero-sub">Final-year Computer Science student building full-stack web apps, exploring applied machine learning, and sharpening DSA skills — seeking a Software Engineering internship.</p>
     <div class="hero-links">
       <a href="mailto:safiyanaguri@gmail.com" class="btn btn-primary">✉ Get In Touch</a>
       <a href="https://github.com/SafiyaNaguri" target="_blank" class="btn btn-ghost">⌥ GitHub</a>
@@ -819,19 +820,12 @@
   <h2 class="section-title reveal">Technical <em>Arsenal</em></h2>
   <div class="skills-grid reveal">
     <div class="skill-group">
-      <div class="skill-group-title">Programming</div>
+      <div class="skill-group-title">Languages</div>
       <div class="skill-tags">
         <span class="skill-tag">Java</span>
-        <span class="skill-tag">JavaScript</span>
         <span class="skill-tag">Python</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-title">Web Technologies</div>
-      <div class="skill-tags">
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
         <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">SQL</span>
       </div>
     </div>
     <div class="skill-group">
@@ -840,21 +834,57 @@
         <span class="skill-tag">Arrays</span>
         <span class="skill-tag">Strings</span>
         <span class="skill-tag">Linked List</span>
+        <span class="skill-tag">Stacks</span>
+        <span class="skill-tag">Queues</span>
+        <span class="skill-tag">Trees</span>
         <span class="skill-tag">Hashing</span>
         <span class="skill-tag">Two Pointers</span>
-        <span class="skill-tag">Stack</span>
         <span class="skill-tag">Recursion</span>
+        <span class="skill-tag">Backtracking</span>
+        <span class="skill-tag">Complexity Analysis</span>
       </div>
     </div>
     <div class="skill-group">
-      <div class="skill-group-title">Concepts & Tools</div>
+      <div class="skill-group-title">Full-Stack Development</div>
       <div class="skill-tags">
-        <span class="skill-tag">OOP</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">DBMS</span>
+        <span class="skill-tag">React.js</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Express.js</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Machine Learning & Data</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">Jupyter Notebook</span>
+        <span class="skill-tag">Google Colab</span>
+        <span class="skill-tag">Kaggle</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Cloud & Tools</div>
+      <div class="skill-tags">
         <span class="skill-tag">Git</span>
         <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">GCP</span>
+        <span class="skill-tag">OCI</span>
+        <span class="skill-tag">Vercel</span>
+        <span class="skill-tag">Render</span>
         <span class="skill-tag">VS Code</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Core CS Concepts</div>
+      <div class="skill-tags">
+        <span class="skill-tag">OOP</span>
+        <span class="skill-tag">DBMS</span>
+        <span class="skill-tag">Software Design</span>
+        <span class="skill-tag">Problem Solving</span>
       </div>
     </div>
   </div>
@@ -870,17 +900,32 @@
 
     <div class="project-card">
       <div class="project-icon">🏠</div>
-      <div class="project-title">Hostel Finder Web App</div>
+      <div class="project-title">HostelHub — Hostel Discovery Web App</div>
       <div class="project-tech">
-        <span class="tech-badge">HTML</span>
-        <span class="tech-badge">CSS</span>
-        <span class="tech-badge">JavaScript</span>
-        <span class="tech-badge">JSON</span>
+        <span class="tech-badge">React.js</span>
+        <span class="tech-badge">Node.js</span>
+        <span class="tech-badge">MongoDB</span>
       </div>
       <ul class="project-desc">
-        <li>Search and explore hostel listings with pricing and details</li>
-        <li>Dynamic data rendering using JSON-based data structures</li>
-        <li>Responsive UI designed for both mobile and desktop screens</li>
+        <li>Designed the UI/UX and core feature set for a hostel search and discovery platform; frontend deployed on Vercel</li>
+        <li>Building backend functionality (Node.js, Express, MongoDB) for dynamic search and listing data — in progress</li>
+        <li>Built a responsive layout across mobile and desktop breakpoints</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon">📊</div>
+      <div class="project-title">House Price Prediction (Internship Project)</div>
+      <div class="project-tech">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Scikit-learn</span>
+        <span class="tech-badge">Pandas</span>
+        <span class="tech-badge">Kaggle</span>
+      </div>
+      <ul class="project-desc">
+        <li>Completed an introductory regression task predicting house prices on a Kaggle dataset</li>
+        <li>Gained hands-on exposure to the Scikit-learn workflow end-to-end</li>
+        <li>Worked through data cleaning, feature selection, and model evaluation in Jupyter/Google Colab</li>
       </ul>
     </div>
 
@@ -892,9 +937,41 @@
         <span class="tech-badge">OOP</span>
       </div>
       <ul class="project-desc">
-        <li>Medication reminder system for patient scheduling</li>
-        <li>Symptom tracking and health update logging features</li>
-        <li>Maintainable class design with structured program flow</li>
+        <li>Developed a medication reminder and patient-scheduling system</li>
+        <li>Symptom tracking and health-log features for ongoing monitoring</li>
+        <li>Designed maintainable, well-structured classes following OOP principles</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label reveal">// experience</div>
+  <h2 class="section-title reveal">Where I've <em>Worked</em></h2>
+  <div class="edu-timeline reveal">
+
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <div class="edu-year">2026 – Present</div>
+      <div class="edu-school">AI & Data Analyst Intern</div>
+      <div class="edu-degree">XYlofy (Remote)</div>
+      <ul class="project-desc" style="margin-top:8px;">
+        <li>Completed a house price prediction task using a Scikit-learn regression model on a Kaggle dataset as a first hands-on ML assignment</li>
+        <li>Building foundational Python, data-analysis, and GitHub-based project workflow skills through real internship tasks</li>
+      </ul>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <div class="edu-year">2026 – Present</div>
+      <div class="edu-school">Java Programmer Intern</div>
+      <div class="edu-degree">CodeAlpha</div>
+      <ul class="project-desc" style="margin-top:8px;">
+        <li>Currently completing a Java Programmer internship, applying core Java and OOP concepts to real tasks</li>
       </ul>
     </div>
 
@@ -915,10 +992,13 @@
         <span class="dsa-topic">Arrays</span>
         <span class="dsa-topic">Strings</span>
         <span class="dsa-topic">Linked Lists</span>
+        <span class="dsa-topic">Stacks</span>
+        <span class="dsa-topic">Queues</span>
+        <span class="dsa-topic">Trees</span>
         <span class="dsa-topic">Hashing</span>
         <span class="dsa-topic">Two Pointers</span>
-        <span class="dsa-topic">Stack</span>
         <span class="dsa-topic">Recursion</span>
+        <span class="dsa-topic">Backtracking</span>
         <span class="dsa-topic">Complexity Analysis</span>
       </div>
     </div>
@@ -1020,6 +1100,22 @@
       <div>
         <div class="cert-name">Super Contributor</div>
         <div class="cert-issuer">Hacktoberfest 2025</div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">⭐</div>
+      <div>
+        <div class="cert-name">200+ DSA Problems Solved</div>
+        <div class="cert-issuer">LeetCode & GeeksforGeeks</div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">🎯</div>
+      <div>
+        <div class="cert-name">9.47 CGPA</div>
+        <div class="cert-issuer">Final Year Computer Science</div>
       </div>
     </div>
 
